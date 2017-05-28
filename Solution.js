@@ -1,5 +1,5 @@
 //first task
-db.score.find({
+db.grades.find({
     "scores": {
         $elemMatch: {
             "score": {
@@ -11,7 +11,7 @@ db.score.find({
 }).pretty();
 
 //second tast
-db.score.aggregate({
+db.grades.aggregate({
     $unwind: "$scores"
 }, {
     $match: {
