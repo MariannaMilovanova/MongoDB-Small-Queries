@@ -32,7 +32,7 @@ db.grades.find({
         $set: {
             "accepted": true
         }
-    });
+    })
 });
 db.grades.find({
     "name": "Dusti Lemmond"
